@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "z8/6LMO4C0ew7nd0sPDxZOezRg4HaEdXqeNleAj+boI=",
+  "Source": "SessionManagementService",
+  "BasePath": "_content/SessionManagementService",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

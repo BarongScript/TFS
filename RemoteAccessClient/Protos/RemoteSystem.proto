@@ -1,0 +1,26 @@
+syntax = "proto3";
+
+option csharp_namespace = "SessionManagementService";
+
+package RemoteSystem;
+
+service RemoteSystem {
+  rpc OpenRemoteSession (OpenRemoteSessionRequest) returns (OpenRemoteSessionResponse);
+  rpc NotifySessionStatus (NotifySessionStatusRequest) returns (NotifySessionStatusResponse);
+}
+
+message OpenRemoteSessionRequest {
+  string remote_user_id = 1;
+  string remote_ip_address = 2;
+}
+
+message OpenRemoteSessionResponse {
+  string session_id = 1;
+}
+
+message NotifySessionStatusRequest {
+  string session_id = 1;
+  string event_type = 2;
+}
+
+message NotifySessionStatusResponse {}
